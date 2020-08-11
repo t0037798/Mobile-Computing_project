@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout android:layout_width="fill_parent">
+        <TableRow android:gravity="center">
+            <Button android:id="@+id/btnAppend" android:text="新增" />
+            <Button android:id="@+id/btnEdit" android:text="修改" />
+            <Button android:id="@+id/btnDelete" android:text="刪除" />
+            <Button android:id="@+id/btnClear" android:text="清除" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="必備用品" android:layout_weight="1"
+                android:textColor="#0000FF"
+                android:textSize="20sp"
+                android:layout_gravity="center" />
+            <EditText android:id="@+id/edtName"
+                android:textColor="#0000FF"
+                android:textSize="20sp"
+                android:layout_weight="4"/>
+
+        </TableRow>
+    </TableLayout>
+    <TableRow>
+        <ListView android:id="@+id/ListView01" android:layout_weight="1"/>
+    </TableRow>
+
+</TableLayout>
